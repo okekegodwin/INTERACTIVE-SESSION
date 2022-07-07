@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --modarate-blue: hsl(238, 40%, 52%);
+    --soft-red: hsl(358, 79%, 66%);
+    --light-grayish-blue: hsl(239, 57%, 85%);
+    --pale-red: hsl(357, 100%, 86%);
+    --dark-blue: hsl(212, 24%, 26%);
+    --grayish-blue: hsl(211, 10%, 45%);
+    --light-gray: hsl(223, 19%, 93%);
+    --very-light-gray: hsl(228, 33%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.container {
+    /* width: 100%; */
+    /* max-width: 700px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-inline: .5rem;
+}
+
+.all{
+    /* width: 100%; */
+    max-width: 500px;  
+}
+
+.amyrobson,
+.maxblagun {
+    max-width: 100%;
+    /* margin-inline: 0.5rem; */
+    margin-block: 1rem;
+    background-color: var(--white);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    font-size: 16px;
+    color: var(--dark-blue);
+    border-radius: 0.4rem;
+}
+
+.amy_header,
+.max_header,
+.ram_header {
+    display: flex;
+    gap: 1em;
+}
+
+.amy_header img,
+.max_header img,
+.ram_header img {
+    width: 2em;
+    margin-top: -0.4em;
+}
+
+.amy_testimony,
+.max_testimony,
+.ram_testimony,
+.juli_testimony {
+    margin-top: 0.5em;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.amy_footer,
+.max_footer,
+.ram_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.volume_amy,
+.volume_max,
+.volume_ram,
+.volume_juli {
+    word-spacing: 0.7em;
+    background-color: var(--light-gray);
+    padding-inline: 0.6rem;
+    padding-block: 0.6rem;
+    border-radius: 0.5rem;
+    color: var(--modarate-blue);
+}
+
+.reply_amy,
+.reply_max,
+.reply_ram {
+    padding-top: 0.6rem;
+    cursor: pointer;
+}
+
+.reply_amy b,
+.reply_max b,
+.reply_ram b {
+    margin-left: 0.5em;
+    color: var(--modarate-blue);
+}
+
+.ramsesmiron,
+.juliusomo {
+    position: relative;
+    max-width: 100%;
+    margin-inline: 1.8rem 0.1rem;
+    margin-block: 1rem;
+    background-color: var(--white);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    font-size: 16px;
+    color: var(--dark-blue);
+    border-radius: 0.4rem;
+}
+
+.juli_header {
+    display: flex;
+    gap: 0.5em;
+}
+
+.juli_header img {
+    width: 2em;
+    margin-top: -0.4em;
+}
+
+.juli_header article {
+    background-color: var(--modarate-blue);
+    color: var(--white);
+    padding-inline: 0.2em;
+    height: 1.2em;
+}
+
+.juli_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.juli_option {
+    padding-top: 0.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.juli_footer .delete_juli {
+    cursor: pointer;
+}
+
+.juli_footer .edit_juli {
+    cursor: pointer;
+}
+
+.ram_testimony b,
+.juli_testimony b {
+    color: var(--modarate-blue);
+}
+
+.my_delete {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 85, 85, 0.7);
+    padding-block: 10rem;
+}
+
+.to_delete {
+    margin-inline: 0rem;
+    margin-block: 1rem;
+    background-color: var(--white);
+    padding-block: 2rem;
+    padding-inline: 1.6rem;
+    z-index: 1;
+    border-radius: 0.4em;
+}
+
+.to_delete b {
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.to_delete p {
+    color: var(--grayish-blue);
+    font-size: 17px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.option_button {
+    display: flex;
+    gap: 2em;
+}
+
+.option_button button {
+    padding-block: 0.6em;
+    padding-inline: 0.8em;
+}
+
+.option_button .no_btn {
+    border: none;
+    border-radius: 0.4em;
+    background-color: var(--grayish-blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.option_button .yes_btn {
+    border: none;
+    border-radius: 0.4em;
+    background-color: var(--soft-red);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.comment,
+.comment1,
+.comment2,
+.comment3 {
+    margin-inline: 0.5rem;
+    margin-block: 1rem;
+    background-color: var(--white);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    font-size: 16px;
+    border-radius: 0.4rem;
+}
+
+.comment textarea,
+.comment1 textarea,
+.comment2 textarea,
+.comment3 textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 0.3em;
+}
+
+.comment textarea:focus,
+.comment1 textarea:focus,
+.comment2 textarea:focus,
+.comment3 textarea:focus {
+    outline: none;
+    border: 1px solid var(--modarate-blue);
+    color: var(--grayish-blue);
+}
+
+.avatar_send,
+.avatar_send1,
+.avatar_send2,
+.avatar_send3 {
+    margin-top: 0.1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment img,
+.comment1 img,
+.comment2 img,
+.comment3 img {
+    width: 2rem;
+}
+
+.avatar_send button,
+.avatar_send1 button,
+.avatar_send2 button,
+.avatar_send3 button {
+    background-color: var(--modarate-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 0.2rem;
+    padding-inline: 1.2rem;
+    padding-block: 0.7rem;
+    cursor: pointer;
+}
+
+.avatar_send button:hover,
+.avatar_send1 button:hover,
+.avatar_send2 button:hover,
+.avatar_send3 button:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.comment1 {
+    display: none;
+}
+
+.comment2 {
+    display: none;
+}
+
+.comment3 {
+    display: none;
+}
